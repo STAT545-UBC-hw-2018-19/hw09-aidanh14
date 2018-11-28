@@ -1,17 +1,18 @@
-make-activity
+#Homework 09 - Make Activity
 =============
 
-The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
+My addition the the original pipeline is to parse through `words.txt` and extract all palindromes more than one letter long. A palindrome is a word that is the same backwards as forwards, e.g. "Anna" spelled backwards is "Anna".
 
-  * How to run an R script non-interactively
-  * How to use `make`
-    - to record which files are inputs vs. intermediates vs. outputs
-    - to capture how scripts and commands convert inputs to outputs
-    - to re-run parts of an analysis that are out-of-date
-  * The intersection of R and `make`, i.e. how to
-    - run snippets of R code
-    - run an entire R script
-    - render an R Markdown document (or R script)
-  * The interface between RStudio and `make`
-  * How to use `make` from the shell
-  * How Git facilitates the process of building a pipeline
+The orginal makefile was a pipeline that output the file [report.html](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/report.html). 
+
+What I have added in my version is a second output report, [palindromeReport.html](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeReport.html) (the [markdown version](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeReport.md) is a little nicer on the eyes for viewing in Github). 
+
+The second pipeline is as follows:
+
+### [words.txt](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/words.txt) =>
+### [palindromeWords.py](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeWords.py) =>
+### [palindromes.txt](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/words.txt) =>
+### [palindromeReport.Rmd](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeReport.Rmd) =>
+### [palindromeReport.md](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeReport.md), [palindromeReport.html](https://github.com/STAT545-UBC-students/hw09-aidanh14/blob/master/palindromeReport.html)
+
+Enjoy!
